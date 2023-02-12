@@ -1,0 +1,34 @@
+class Department {
+    public void addStaff(String name) {}
+    public void displayRevenue() {}
+}
+
+class Production extends Department {
+    private float revenue = 100000;
+    public void addStaff(String name) {
+        System.out.println("Adding staff to Production department: " + name);
+    }
+    public void displayRevenue() {
+        System.out.println("Production revenue: " + revenue);
+    }
+}
+
+class Accounting extends Department {
+    private float revenue = 50000;
+    public void addStaff(String name) {
+        System.out.println("Adding staff to Accounting department: " + name);
+    }
+    public void displayRevenue() {
+        System.out.println("Accounting revenue: " + revenue);
+    }
+}
+
+class Marketing extends Department {
+    private float revenue = 80000;
+    public void addStaff(String name) {
+        System.out.println("Adding staff to Marketing department: " + name);
+    }
+    public void displayRevenue() {
+        System.out.println("Marketing revenue: " + revenue);
+    }
+}
